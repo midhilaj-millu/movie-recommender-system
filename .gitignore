@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+similarity.pkl
+# Pickle files (optional – read note below)
+# Uncomment next two lines ONLY if files are large
+# movies_list.pkl
+# similarity.pkl
