@@ -1,6 +1,12 @@
 import streamlit as st
 import pickle
 import requests
+import os
+
+if not os.path.exists("similarity.pkl"):
+    st.warning("Generating similarity file. This may take a moment...")
+    import subprocess
+    subprocess.run(["python", "main.py"])
 
 
 # Load API key from Streamlit secrets
