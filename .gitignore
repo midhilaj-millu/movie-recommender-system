@@ -1,15 +1,36 @@
+# =========================================
+# Secrets — NEVER commit
+# =========================================
+.streamlit/secrets.toml
+secrets.toml
+
+# =========================================
+# Large ML Model Files
+# =========================================
+similarity.pkl
+movies_list.pkl
+
+movies_new.pkl
+similarity_new.pkl
+
+# =========================================
 # Python
+# =========================================
 __pycache__/
 *.pyc
+*.pyo
 
-# Virtual env
+.env
 venv/
+.venv/
 
-# Streamlit secrets
-.streamlit/secrets.toml
+# =========================================
+# Jupyter
+# =========================================
+.ipynb_checkpoints/
 
-similarity.pkl
-# Pickle files (optional – read note below)
-# Uncomment next two lines ONLY if files are large
-# movies_list.pkl
-# similarity.pkl
+# =========================================
+# OS Files
+# =========================================
+.DS_Store
+Thumbs.db
